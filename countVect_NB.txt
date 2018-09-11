@@ -1,0 +1,123 @@
+Loading IMDB dataset...
+Original dataframe shape:  (100000, 4)
+Original DF columns: Index(['type', 'review', 'label', 'file'], dtype='object')
+Original Train/Test split: train    75000
+test     25000
+Name: type, dtype: int64
+Dropping the file column...
+Dropping the unlabeled rows and splitting into train/test...
+X_train, y_train, shapes: (25000,) (25000,)
+y_train counts: neg    12500
+pos    12500
+Name: label, dtype: int64
+X_test, y_test, shapes: (25000,) (25000,)
+y_test counts: neg    12500
+pos    12500
+Name: label, dtype: int64
+Fitting 3 folds for each of 96 candidates, totalling 288 fits
+
+Best parameters set found on development set:
+
+{'countVect__binary': False, 'countVect__max_df': 0.2, 'countVect__ngram_range': (1, 5), 'countVect__stop_words': None}
+
+Grid scores on development set:
+
+0.890 (+/-0.002) for {'countVect__binary': False, 'countVect__max_df': 0.2, 'countVect__ngram_range': (1, 5), 'countVect__stop_words': None}
+0.890 (+/-0.001) for {'countVect__binary': False, 'countVect__max_df': 0.4, 'countVect__ngram_range': (1, 5), 'countVect__stop_words': None}
+0.889 (+/-0.002) for {'countVect__binary': False, 'countVect__max_df': 0.2, 'countVect__ngram_range': (1, 3), 'countVect__stop_words': None}
+0.889 (+/-0.003) for {'countVect__binary': True, 'countVect__max_df': 0.4, 'countVect__ngram_range': (1, 5), 'countVect__stop_words': None}
+0.889 (+/-0.003) for {'countVect__binary': True, 'countVect__max_df': 0.2, 'countVect__ngram_range': (1, 5), 'countVect__stop_words': None}
+0.889 (+/-0.003) for {'countVect__binary': True, 'countVect__max_df': 0.6, 'countVect__ngram_range': (1, 5), 'countVect__stop_words': None}
+0.889 (+/-0.002) for {'countVect__binary': True, 'countVect__max_df': 0.8, 'countVect__ngram_range': (1, 5), 'countVect__stop_words': None}
+0.889 (+/-0.003) for {'countVect__binary': False, 'countVect__max_df': 0.6, 'countVect__ngram_range': (1, 5), 'countVect__stop_words': None}
+0.888 (+/-0.003) for {'countVect__binary': True, 'countVect__max_df': 0.2, 'countVect__ngram_range': (1, 3), 'countVect__stop_words': None}
+0.888 (+/-0.002) for {'countVect__binary': False, 'countVect__max_df': 0.8, 'countVect__ngram_range': (1, 5), 'countVect__stop_words': None}
+0.888 (+/-0.003) for {'countVect__binary': True, 'countVect__max_df': 0.4, 'countVect__ngram_range': (1, 3), 'countVect__stop_words': None}
+0.888 (+/-0.002) for {'countVect__binary': False, 'countVect__max_df': 0.4, 'countVect__ngram_range': (1, 3), 'countVect__stop_words': None}
+0.887 (+/-0.003) for {'countVect__binary': True, 'countVect__max_df': 0.6, 'countVect__ngram_range': (1, 3), 'countVect__stop_words': None}
+0.887 (+/-0.003) for {'countVect__binary': False, 'countVect__max_df': 0.2, 'countVect__ngram_range': (2, 3), 'countVect__stop_words': None}
+0.887 (+/-0.002) for {'countVect__binary': True, 'countVect__max_df': 0.8, 'countVect__ngram_range': (1, 3), 'countVect__stop_words': None}
+0.886 (+/-0.001) for {'countVect__binary': False, 'countVect__max_df': 0.2, 'countVect__ngram_range': (2, 5), 'countVect__stop_words': None}
+0.886 (+/-0.002) for {'countVect__binary': False, 'countVect__max_df': 0.4, 'countVect__ngram_range': (2, 5), 'countVect__stop_words': None}
+0.886 (+/-0.001) for {'countVect__binary': False, 'countVect__max_df': 0.6, 'countVect__ngram_range': (1, 3), 'countVect__stop_words': None}
+0.886 (+/-0.002) for {'countVect__binary': False, 'countVect__max_df': 0.8, 'countVect__ngram_range': (2, 5), 'countVect__stop_words': None}
+0.886 (+/-0.002) for {'countVect__binary': False, 'countVect__max_df': 0.6, 'countVect__ngram_range': (2, 5), 'countVect__stop_words': None}
+0.886 (+/-0.002) for {'countVect__binary': False, 'countVect__max_df': 0.8, 'countVect__ngram_range': (2, 3), 'countVect__stop_words': None}
+0.886 (+/-0.002) for {'countVect__binary': False, 'countVect__max_df': 0.4, 'countVect__ngram_range': (2, 3), 'countVect__stop_words': None}
+0.886 (+/-0.002) for {'countVect__binary': False, 'countVect__max_df': 0.6, 'countVect__ngram_range': (2, 3), 'countVect__stop_words': None}
+0.886 (+/-0.002) for {'countVect__binary': True, 'countVect__max_df': 0.2, 'countVect__ngram_range': (2, 5), 'countVect__stop_words': None}
+0.885 (+/-0.002) for {'countVect__binary': False, 'countVect__max_df': 0.8, 'countVect__ngram_range': (1, 3), 'countVect__stop_words': None}
+0.885 (+/-0.002) for {'countVect__binary': True, 'countVect__max_df': 0.8, 'countVect__ngram_range': (2, 5), 'countVect__stop_words': None}
+0.885 (+/-0.002) for {'countVect__binary': True, 'countVect__max_df': 0.4, 'countVect__ngram_range': (2, 5), 'countVect__stop_words': None}
+0.885 (+/-0.001) for {'countVect__binary': True, 'countVect__max_df': 0.6, 'countVect__ngram_range': (2, 5), 'countVect__stop_words': None}
+0.884 (+/-0.001) for {'countVect__binary': True, 'countVect__max_df': 0.4, 'countVect__ngram_range': (2, 3), 'countVect__stop_words': None}
+0.884 (+/-0.001) for {'countVect__binary': True, 'countVect__max_df': 0.6, 'countVect__ngram_range': (2, 3), 'countVect__stop_words': None}
+0.884 (+/-0.001) for {'countVect__binary': True, 'countVect__max_df': 0.8, 'countVect__ngram_range': (2, 3), 'countVect__stop_words': None}
+0.884 (+/-0.001) for {'countVect__binary': True, 'countVect__max_df': 0.2, 'countVect__ngram_range': (2, 3), 'countVect__stop_words': None}
+0.875 (+/-0.002) for {'countVect__binary': True, 'countVect__max_df': 0.2, 'countVect__ngram_range': (1, 3), 'countVect__stop_words': True}
+0.875 (+/-0.004) for {'countVect__binary': False, 'countVect__max_df': 0.2, 'countVect__ngram_range': (1, 5), 'countVect__stop_words': True}
+0.875 (+/-0.005) for {'countVect__binary': False, 'countVect__max_df': 0.4, 'countVect__ngram_range': (1, 5), 'countVect__stop_words': True}
+0.875 (+/-0.004) for {'countVect__binary': False, 'countVect__max_df': 0.2, 'countVect__ngram_range': (1, 3), 'countVect__stop_words': True}
+0.875 (+/-0.004) for {'countVect__binary': False, 'countVect__max_df': 0.4, 'countVect__ngram_range': (1, 3), 'countVect__stop_words': True}
+0.875 (+/-0.002) for {'countVect__binary': True, 'countVect__max_df': 0.2, 'countVect__ngram_range': (1, 5), 'countVect__stop_words': True}
+0.875 (+/-0.002) for {'countVect__binary': True, 'countVect__max_df': 0.4, 'countVect__ngram_range': (1, 3), 'countVect__stop_words': True}
+0.874 (+/-0.005) for {'countVect__binary': False, 'countVect__max_df': 0.6, 'countVect__ngram_range': (1, 5), 'countVect__stop_words': True}
+0.874 (+/-0.002) for {'countVect__binary': True, 'countVect__max_df': 0.6, 'countVect__ngram_range': (1, 5), 'countVect__stop_words': True}
+0.874 (+/-0.003) for {'countVect__binary': True, 'countVect__max_df': 0.6, 'countVect__ngram_range': (1, 3), 'countVect__stop_words': True}
+0.874 (+/-0.001) for {'countVect__binary': True, 'countVect__max_df': 0.4, 'countVect__ngram_range': (1, 5), 'countVect__stop_words': True}
+0.874 (+/-0.003) for {'countVect__binary': True, 'countVect__max_df': 0.8, 'countVect__ngram_range': (1, 3), 'countVect__stop_words': True}
+0.874 (+/-0.003) for {'countVect__binary': True, 'countVect__max_df': 0.8, 'countVect__ngram_range': (1, 5), 'countVect__stop_words': True}
+0.874 (+/-0.005) for {'countVect__binary': False, 'countVect__max_df': 0.6, 'countVect__ngram_range': (1, 3), 'countVect__stop_words': True}
+0.874 (+/-0.004) for {'countVect__binary': False, 'countVect__max_df': 0.8, 'countVect__ngram_range': (1, 3), 'countVect__stop_words': True}
+0.873 (+/-0.005) for {'countVect__binary': False, 'countVect__max_df': 0.8, 'countVect__ngram_range': (1, 5), 'countVect__stop_words': True}
+0.857 (+/-0.003) for {'countVect__binary': True, 'countVect__max_df': 0.4, 'countVect__ngram_range': (3, 5), 'countVect__stop_words': None}
+0.857 (+/-0.003) for {'countVect__binary': True, 'countVect__max_df': 0.6, 'countVect__ngram_range': (3, 5), 'countVect__stop_words': None}
+0.857 (+/-0.003) for {'countVect__binary': True, 'countVect__max_df': 0.8, 'countVect__ngram_range': (3, 5), 'countVect__stop_words': None}
+0.857 (+/-0.002) for {'countVect__binary': False, 'countVect__max_df': 0.4, 'countVect__ngram_range': (3, 5), 'countVect__stop_words': None}
+0.857 (+/-0.002) for {'countVect__binary': False, 'countVect__max_df': 0.6, 'countVect__ngram_range': (3, 5), 'countVect__stop_words': None}
+0.857 (+/-0.002) for {'countVect__binary': False, 'countVect__max_df': 0.8, 'countVect__ngram_range': (3, 5), 'countVect__stop_words': None}
+0.857 (+/-0.002) for {'countVect__binary': False, 'countVect__max_df': 0.2, 'countVect__ngram_range': (3, 5), 'countVect__stop_words': None}
+0.857 (+/-0.003) for {'countVect__binary': True, 'countVect__max_df': 0.2, 'countVect__ngram_range': (3, 5), 'countVect__stop_words': None}
+0.856 (+/-0.004) for {'countVect__binary': True, 'countVect__max_df': 0.4, 'countVect__ngram_range': (1, 1), 'countVect__stop_words': True}
+0.856 (+/-0.006) for {'countVect__binary': False, 'countVect__max_df': 0.4, 'countVect__ngram_range': (1, 1), 'countVect__stop_words': None}
+0.856 (+/-0.007) for {'countVect__binary': False, 'countVect__max_df': 0.4, 'countVect__ngram_range': (1, 1), 'countVect__stop_words': True}
+0.856 (+/-0.009) for {'countVect__binary': False, 'countVect__max_df': 0.2, 'countVect__ngram_range': (2, 3), 'countVect__stop_words': True}
+0.856 (+/-0.009) for {'countVect__binary': False, 'countVect__max_df': 0.4, 'countVect__ngram_range': (2, 3), 'countVect__stop_words': True}
+0.856 (+/-0.004) for {'countVect__binary': True, 'countVect__max_df': 0.2, 'countVect__ngram_range': (1, 1), 'countVect__stop_words': None}
+0.856 (+/-0.006) for {'countVect__binary': False, 'countVect__max_df': 0.2, 'countVect__ngram_range': (1, 1), 'countVect__stop_words': None}
+0.856 (+/-0.003) for {'countVect__binary': True, 'countVect__max_df': 0.2, 'countVect__ngram_range': (1, 1), 'countVect__stop_words': True}
+0.856 (+/-0.008) for {'countVect__binary': False, 'countVect__max_df': 0.2, 'countVect__ngram_range': (2, 5), 'countVect__stop_words': True}
+0.856 (+/-0.008) for {'countVect__binary': False, 'countVect__max_df': 0.4, 'countVect__ngram_range': (2, 5), 'countVect__stop_words': True}
+0.856 (+/-0.008) for {'countVect__binary': False, 'countVect__max_df': 0.6, 'countVect__ngram_range': (2, 3), 'countVect__stop_words': True}
+0.856 (+/-0.008) for {'countVect__binary': False, 'countVect__max_df': 0.8, 'countVect__ngram_range': (2, 3), 'countVect__stop_words': True}
+0.856 (+/-0.005) for {'countVect__binary': True, 'countVect__max_df': 0.6, 'countVect__ngram_range': (1, 1), 'countVect__stop_words': True}
+0.855 (+/-0.008) for {'countVect__binary': False, 'countVect__max_df': 0.6, 'countVect__ngram_range': (2, 5), 'countVect__stop_words': True}
+0.855 (+/-0.008) for {'countVect__binary': False, 'countVect__max_df': 0.8, 'countVect__ngram_range': (2, 5), 'countVect__stop_words': True}
+0.855 (+/-0.006) for {'countVect__binary': False, 'countVect__max_df': 0.2, 'countVect__ngram_range': (1, 1), 'countVect__stop_words': True}
+0.855 (+/-0.006) for {'countVect__binary': True, 'countVect__max_df': 0.4, 'countVect__ngram_range': (1, 1), 'countVect__stop_words': None}
+0.855 (+/-0.007) for {'countVect__binary': False, 'countVect__max_df': 0.6, 'countVect__ngram_range': (1, 1), 'countVect__stop_words': True}
+0.854 (+/-0.004) for {'countVect__binary': True, 'countVect__max_df': 0.8, 'countVect__ngram_range': (1, 1), 'countVect__stop_words': True}
+0.854 (+/-0.008) for {'countVect__binary': True, 'countVect__max_df': 0.6, 'countVect__ngram_range': (2, 3), 'countVect__stop_words': True}
+0.854 (+/-0.008) for {'countVect__binary': True, 'countVect__max_df': 0.8, 'countVect__ngram_range': (2, 3), 'countVect__stop_words': True}
+0.854 (+/-0.008) for {'countVect__binary': True, 'countVect__max_df': 0.2, 'countVect__ngram_range': (2, 3), 'countVect__stop_words': True}
+0.854 (+/-0.008) for {'countVect__binary': True, 'countVect__max_df': 0.4, 'countVect__ngram_range': (2, 3), 'countVect__stop_words': True}
+0.853 (+/-0.010) for {'countVect__binary': True, 'countVect__max_df': 0.2, 'countVect__ngram_range': (2, 5), 'countVect__stop_words': True}
+0.853 (+/-0.010) for {'countVect__binary': True, 'countVect__max_df': 0.4, 'countVect__ngram_range': (2, 5), 'countVect__stop_words': True}
+0.853 (+/-0.003) for {'countVect__binary': True, 'countVect__max_df': 0.6, 'countVect__ngram_range': (1, 1), 'countVect__stop_words': None}
+0.853 (+/-0.011) for {'countVect__binary': True, 'countVect__max_df': 0.6, 'countVect__ngram_range': (2, 5), 'countVect__stop_words': True}
+0.853 (+/-0.011) for {'countVect__binary': True, 'countVect__max_df': 0.8, 'countVect__ngram_range': (2, 5), 'countVect__stop_words': True}
+0.853 (+/-0.006) for {'countVect__binary': False, 'countVect__max_df': 0.8, 'countVect__ngram_range': (1, 1), 'countVect__stop_words': True}
+0.852 (+/-0.005) for {'countVect__binary': True, 'countVect__max_df': 0.8, 'countVect__ngram_range': (1, 1), 'countVect__stop_words': None}
+0.850 (+/-0.003) for {'countVect__binary': False, 'countVect__max_df': 0.6, 'countVect__ngram_range': (1, 1), 'countVect__stop_words': None}
+0.846 (+/-0.001) for {'countVect__binary': False, 'countVect__max_df': 0.8, 'countVect__ngram_range': (1, 1), 'countVect__stop_words': None}
+0.737 (+/-0.009) for {'countVect__binary': False, 'countVect__max_df': 0.2, 'countVect__ngram_range': (3, 5), 'countVect__stop_words': True}
+0.737 (+/-0.009) for {'countVect__binary': False, 'countVect__max_df': 0.4, 'countVect__ngram_range': (3, 5), 'countVect__stop_words': True}
+0.737 (+/-0.009) for {'countVect__binary': False, 'countVect__max_df': 0.6, 'countVect__ngram_range': (3, 5), 'countVect__stop_words': True}
+0.737 (+/-0.009) for {'countVect__binary': False, 'countVect__max_df': 0.8, 'countVect__ngram_range': (3, 5), 'countVect__stop_words': True}
+0.737 (+/-0.011) for {'countVect__binary': True, 'countVect__max_df': 0.2, 'countVect__ngram_range': (3, 5), 'countVect__stop_words': True}
+0.737 (+/-0.011) for {'countVect__binary': True, 'countVect__max_df': 0.4, 'countVect__ngram_range': (3, 5), 'countVect__stop_words': True}
+0.737 (+/-0.011) for {'countVect__binary': True, 'countVect__max_df': 0.6, 'countVect__ngram_range': (3, 5), 'countVect__stop_words': True}
+0.737 (+/-0.011) for {'countVect__binary': True, 'countVect__max_df': 0.8, 'countVect__ngram_range': (3, 5), 'countVect__stop_words': True}
+
+CountVect + NB Accuracy: 0.8934
+CountVect + NB Log Loss:  3.6818719443741292
